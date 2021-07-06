@@ -8,7 +8,25 @@
 		<link rel="stylesheet" href="./asset/main.css" />
 	</head>
 	<body>
-		<h1>create Playlist</h1>
+		<h1>Create Playlist</h1>
+
+		<form>
+			<label for="title">Title:</label><br />
+			<input type="text" id="title" name="title" value="" /><br />
+			<label for="descriptiom">Description:</label><br />
+			<input type="text" id="description" name="description" value="" /><br />
+			<button onclick="myFunction()">Submit</button>
+		</form>
+		<div class="main">
+			<div class="img">
+				<img src="./asset/images/img-song.jpg" alt="" />
+			</div>
+			<div class="track-title">Track Title</div>
+			<div class="artist">Artist</div>
+			<div class="albums">Albums</div>
+			<button type="submit">Select</button>
+		</div>
+
 		<script src="./asset/main.js"></script>
 	</body>
 </html>
