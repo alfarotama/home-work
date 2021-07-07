@@ -1,3 +1,3 @@
-function myFunction() {
-	alert("I am an alert box!");
+function formSubmit() {
+	alert("Have A Great Day");
 }

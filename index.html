@@ -8,22 +8,20 @@
 		<link rel="stylesheet" href="./asset/main.css" />
 	</head>
 	<body>
-		<h1>Create Playlist</h1>
-
-		<form>
+		<h1 class="header">Create Playlist</h1>
+		<form onsubmit="formSubmit()" class="form-submit">
 			<label for="title">Title:</label><br />
 			<input type="text" id="title" name="title" value="" /><br />
-			<label for="descriptiom">Description:</label><br />
+			<label for="description">Description:</label><br />
 			<input type="text" id="description" name="description" value="" /><br />
-			<button onclick="myFunction()">Submit</button>
+			<input type="submit" />
 		</form>
-		<div class="main">
-			<div class="img">
-				<img src="./asset/images/img-song.jpg" alt="" />
-			</div>
-			<div class="track-title">Track Title</div>
-			<div class="artist">Artist</div>
-			<div class="albums">Albums</div>
+
+		<div class="track-info">
+			<img src="./asset/images/img-song.jpg" alt="Album-picture" />
+			<p class="title">Track-title</p>
+			<p class="artist">Artist</p>
+			<p class="album">Album</p>
 			<button type="submit">Select</button>
 		</div>
 
