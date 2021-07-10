@@ -18,7 +18,7 @@ axios
 		artistDOM.innerHTML = `Artist: ${response.data.artists[0].name}`;
 
 		const albumDOM = document.getElementById("album");
-		albumDOM.innerHTML = `Album: ${response.data.name}`;
+		albumDOM.innerHTML = `Album: ${response.data.album.name}`;
 	})
 	.catch(function (error) {
 		//handle error
