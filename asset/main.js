@@ -15,7 +15,10 @@ axios
 		trackTitleDOM.innerHTML = `Track title: ${response.data.name}`;
 
 		const artistDOM = document.getElementById("artist");
-		artistDOM.innerHTML = `Artist: ${response.data.artist[0]}`;
+		artistDOM.innerHTML = `Artist: ${response.data.artists[0].name}`;
+
+		const albumDOM = document.getElementById("album");
+		albumDOM.innerHTML = `Album: ${response.data.name}`;
 	})
 	.catch(function (error) {
 		//handle error
